@@ -1,9 +1,9 @@
-total 2825440
--rw-r--r--  1 tiagoec tiagoec   73134376 Apr 24 11:26 Miniconda3-latest-Linux-x86_64.sh
-drwxr-xr-x  2 tiagoec tiagoec       4096 Aug  1 11:18 circos
--rw-r--r--  1 tiagoec tiagoec 2820082444 Apr 17 12:18 cuda-repo-wsl-ubuntu-12-1-local_12.1.1-1_amd64.deb
-drwxr-xr-x  6 tiagoec tiagoec       4096 Aug  1 09:22 esalq
-drwxr-xr-x  3 tiagoec tiagoec       4096 Jun  8 11:55 flye
-drwxr-xr-x 19 tiagoec tiagoec       4096 May  2 13:46 miniconda3
-drwxr-xr-x  3 tiagoec tiagoec       4096 May 14 17:39 sd
-drwxr-xr-x  3 tiagoec tiagoec       4096 Aug 17 10:09 software
+total 2.7G
+-rw-r--r--  1 tiagoec tiagoec  70M Apr 24 11:26 Miniconda3-latest-Linux-x86_64.sh
+drwxr-xr-x  2 tiagoec tiagoec 4.0K Aug  1 11:18 circos
+-rw-r--r--  1 tiagoec tiagoec 2.7G Apr 17 12:18 cuda-repo-wsl-ubuntu-12-1-local_12.1.1-1_amd64.deb
+drwxr-xr-x  6 tiagoec tiagoec 4.0K Aug  1 09:22 esalq
+drwxr-xr-x  3 tiagoec tiagoec 4.0K Jun  8 11:55 flye
+drwxr-xr-x 19 tiagoec tiagoec 4.0K May  2 13:46 miniconda3
+drwxr-xr-x  3 tiagoec tiagoec 4.0K May 14 17:39 sd
+drwxr-xr-x  3 tiagoec tiagoec 4.0K Aug 17 10:09 software
