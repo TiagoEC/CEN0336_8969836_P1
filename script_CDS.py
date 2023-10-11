@@ -13,6 +13,8 @@ n4 = sys.argv[5]
 n5 = sys.argv[6]
 n6 = sys.argv[7]
 
+sequencia = sequencia.upper()
+
 ## Testes de entrada de dados
 if n1.isdigit() and n2.isdigit() and n3.isdigit() and n4.isdigit() and n5.isdigit() and n6.isdigit():
     # Como as posições são contadas a partir de 1, é necessário subtrair 1 para que a posição seja correta na sequência

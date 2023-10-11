@@ -5,6 +5,7 @@
 
 import sys
 
+
 ## Teste de entrada de dados
 if sys.argv.__len__() != 3:
     print("Informe os dois catetos")
