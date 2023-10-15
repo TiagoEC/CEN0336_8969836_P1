@@ -1,9 +1,18 @@
+#!/usr/bin/env python3
+## Esse script recebe uma sequência de DNA e as posições de início e fim de cada CDS, e retorna o cDNA resultante caso os introns estejam corretos
+# Uso: python script_CDS.py <sequência> <posição1> <posição2> <posição3> <posição4> <posição5> <posição6>
+# Exemplo: python script_CDS TTTTTTAUGGTAGTTGAGAGGTTAGAGAAAGUTTTTT 7 9 14 20 28 32
+# Saída: 
+# cDNA resultante:
+# AUGTTGAGAGAAAGU
+
+# Importando as bibliotecas necessárias
 import sys
 
 # Teste da quantidade de argumentos
 if sys.argv.__len__() != 8:
     print("A entrada deve conter 7 argumentos, sendo o primeiro a sequência e os demais as posições dos nucleotídeos onde começa e termina cada CDS do gene") 
-    exit(1)
+    exit(1) # Eu poderia usar sys.exit(1), que seria mais recomendado, mas não achei necessário
 
 ## Variáveis de entrada
 sequencia = sys.argv[1]

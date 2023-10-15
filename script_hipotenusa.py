@@ -1,3 +1,4 @@
+#!/usr/bin/python
 ##Este script recebe dois catetos e calcula o quadrado da hipotenusa
 # Uso: python script_hipotenusa.py <cateto1> <cateto2>
 # Exemplo: python script_hipotenusa.py 3 4
@@ -9,21 +10,12 @@ import sys
 ## Teste de entrada de dados
 if sys.argv.__len__() != 3:
     print("Informe os dois catetos")
-    exit(1)
+    exit(1) # Eu poderia usar sys.exit(1), que seria mais recomendado, mas não achei necessário
 
 cateto1 = sys.argv[1]
 cateto2 = sys.argv[2]
 
 ##Checar se os valores são inteiros e converter
-""" Este método possívelmente não pode ser usado, mas acho que seria o ideal
-try:
-    cateto1 = int(cateto1)
-    cateto2 = int(cateto2)
-except ValueError:
-    print("Os valores devem ser inteiros")
-    exit(1)
-"""
-
 if not (cateto1.isdigit() and cateto2.isdigit()):
     print("Os valores devem ser inteiros")
     exit(1)
