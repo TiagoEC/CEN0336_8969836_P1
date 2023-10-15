@@ -1,5 +1,6 @@
 import sys
 
+# Teste da quantidade de argumentos
 if sys.argv.__len__() != 8:
     print("A entrada deve conter 7 argumentos, sendo o primeiro a sequência e os demais as posições dos nucleotídeos onde começa e termina cada CDS do gene") 
     exit(1)
@@ -13,11 +14,12 @@ n4 = sys.argv[5]
 n5 = sys.argv[6]
 n6 = sys.argv[7]
 
+# Transformar a sequência em maiúscula para evitar erros de comparação
 sequencia = sequencia.upper()
 
 ## Testes de entrada de dados
 if n1.isdigit() and n2.isdigit() and n3.isdigit() and n4.isdigit() and n5.isdigit() and n6.isdigit():
-    # Como as posições são contadas a partir de 1, é necessário subtrair 1 para que a posição seja correta na sequência
+    # Como as posições são contadas a partir de 1, é necessário subtrair 1 para que a posição seja correta na sequência (posição -> index)
     n1 = int(n1)-1
     n2 = int(n2)-1
     n3 = int(n3)-1
@@ -30,15 +32,16 @@ else:
 
 # Criar uma lista com as posições para facilitar a ordenação
 posicoes = [n1, n2, n3, n4, n5, n6]
+
 # Se a lista não estiver ordenada, poderia acontecer erros na hora de pegar os CDSs
 posicoes.sort()
 
 # Testar se as posições estão dentro do tamanho da sequência
-if not (0 < posicoes[0]):
+if not (0 <= posicoes[0]):
     print("Erro: posições devem ser positivas")
     exit(1)
 elif not (posicoes[5] < len(sequencia)):
-    print("Erro: posições devem ser menores que o tamanho da sequência")
+    print(f"Erro: posições devem ser menores que o tamanho da sequência ({len(sequencia)})")
     exit(1)
 
 cdss = []
